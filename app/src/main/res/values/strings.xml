@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AppToolBox</string>
+    <string name="button">Button</string>
+    <string name="home">Welcome</string>
+    <string name="login">LOG IN</string>
+    <string name="logoIsen">isen</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
 </resources>
