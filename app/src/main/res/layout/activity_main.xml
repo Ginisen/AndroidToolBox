@@ -10,13 +10,13 @@
         android:id="@+id/password"
         android:layout_width="343dp"
         android:layout_height="57dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="36dp"
         android:hint="@string/password"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.655" />
 
     <TextView
         android:id="@+id/textView"
@@ -46,12 +46,12 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.636" />
+        app:layout_constraintVertical_bias="0.722" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="333dp"
-        android:layout_height="223dp"
+        android:layout_height="188dp"
         android:layout_marginBottom="300dp"
         android:contentDescription="@string/logoIsen"
         app:layout_constraintBottom_toBottomOf="parent"
