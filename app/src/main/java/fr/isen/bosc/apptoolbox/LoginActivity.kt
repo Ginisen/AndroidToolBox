@@ -14,5 +14,6 @@ class LoginActivity : AppCompatActivity() {
         button.setOnClickListener {
             Toast.makeText(this, "Connected", Toast.LENGTH_SHORT).show()
         }
+
     }
 }
