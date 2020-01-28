@@ -7,7 +7,7 @@
     tools:context=".HomeActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/isen"
         android:layout_width="187dp"
         android:layout_height="73dp"
         android:layout_marginBottom="300dp"
@@ -35,51 +35,51 @@
         app:layout_constraintVertical_bias="0.216" />
 
     <ImageView
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageCycleDeVie"
         android:layout_width="116dp"
         android:layout_height="112dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
         android:contentDescription="@string/cycleVie"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintEnd_toStartOf="@+id/imageSauvegarde"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome"
         app:srcCompat="@drawable/cyclevie" />
 
     <ImageView
-        android:id="@+id/imageButton3"
+        android:id="@+id/imageSauvegarde"
         android:layout_width="116dp"
         android:layout_height="112dp"
         android:layout_marginTop="50dp"
         android:contentDescription="@string/sauvegarde"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/imageCycleDeVie"
         app:layout_constraintTop_toBottomOf="@+id/welcome"
         app:srcCompat="@drawable/sauvegarde" />
 
     <ImageView
-        android:id="@+id/imageButton4"
+        android:id="@+id/imagePermissions"
         android:layout_width="116dp"
         android:layout_height="112dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
         android:contentDescription="@string/permissions"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintEnd_toStartOf="@+id/imageWebservices"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cycleVie"
         app:srcCompat="@drawable/permissions" />
 
     <ImageView
-        android:id="@+id/imageButton5"
+        android:id="@+id/imageWebservices"
         android:layout_width="116dp"
         android:layout_height="112dp"
         android:layout_marginTop="35dp"
         android:contentDescription="@string/webservices"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/imagePermissions"
         app:layout_constraintTop_toBottomOf="@+id/sauvegarde"
         app:srcCompat="@drawable/webservices" />
 
@@ -90,10 +90,10 @@
         android:layout_marginTop="8dp"
         android:text="@string/cycleVie"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/imageCycleDeVie"
         app:layout_constraintHorizontal_bias="0.411"
-        app:layout_constraintStart_toStartOf="@+id/imageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+        app:layout_constraintStart_toStartOf="@+id/imageCycleDeVie"
+        app:layout_constraintTop_toBottomOf="@+id/imageCycleDeVie" />
 
     <TextView
         android:id="@+id/sauvegarde"
@@ -102,9 +102,9 @@
         android:layout_marginTop="8dp"
         android:text="@string/sauvegarde"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
-        app:layout_constraintStart_toStartOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        app:layout_constraintEnd_toEndOf="@+id/imageSauvegarde"
+        app:layout_constraintStart_toStartOf="@+id/imageSauvegarde"
+        app:layout_constraintTop_toBottomOf="@+id/imageSauvegarde" />
 
     <TextView
         android:id="@+id/permissions"
@@ -113,10 +113,10 @@
         android:layout_marginTop="8dp"
         android:text="@string/permissions"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/imagePermissions"
         app:layout_constraintHorizontal_bias="0.304"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintStart_toStartOf="@+id/imagePermissions"
+        app:layout_constraintTop_toBottomOf="@+id/imagePermissions" />
 
     <TextView
         android:id="@+id/webservices"
@@ -125,9 +125,9 @@
         android:layout_marginTop="8dp"
         android:text="@string/webservices"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="@+id/imageWebservices"
         app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+        app:layout_constraintStart_toStartOf="@+id/imageWebservices"
+        app:layout_constraintTop_toBottomOf="@+id/imageWebservices" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
