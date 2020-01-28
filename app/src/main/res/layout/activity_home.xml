@@ -63,7 +63,7 @@
         android:id="@+id/imageButton4"
         android:layout_width="116dp"
         android:layout_height="112dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="32dp"
         android:contentDescription="@string/permissions"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
@@ -76,7 +76,7 @@
         android:id="@+id/imageButton5"
         android:layout_width="116dp"
         android:layout_height="112dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="@string/webservices"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
@@ -126,7 +126,7 @@
         android:text="@string/webservices"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/imageButton5"
-        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="@+id/imageButton5"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
 
