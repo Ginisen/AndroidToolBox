@@ -18,16 +18,11 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         button.setOnClickListener {
-            Toast.makeText(this, "Connected", Toast.LENGTH_SHORT).show()
-        }
 
-        button.setOnClickListener {
-
-            val message = "Tu as cliqué $identifier.text"
+            val message = "${identifier.text} connected"
             Toast.makeText(this, message, Toast.LENGTH_LONG).show()
             doLogin()
         }
-
     }
 
     private fun doLogin() {

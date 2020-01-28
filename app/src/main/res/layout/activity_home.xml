@@ -28,9 +28,106 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239" />
+        app:layout_constraintVertical_bias="0.216" />
+
+    <ImageView
+        android:id="@+id/imageButton2"
+        android:layout_width="116dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/cycleVie"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:srcCompat="@drawable/cyclevie" />
+
+    <ImageView
+        android:id="@+id/imageButton3"
+        android:layout_width="116dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/sauvegarde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:srcCompat="@drawable/sauvegarde" />
+
+    <ImageView
+        android:id="@+id/imageButton4"
+        android:layout_width="116dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/permissions"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycleVie"
+        app:srcCompat="@drawable/permissions" />
+
+    <ImageView
+        android:id="@+id/imageButton5"
+        android:layout_width="116dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/webservices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/sauvegarde"
+        app:srcCompat="@drawable/webservices" />
+
+    <TextView
+        android:id="@+id/cycleVie"
+        android:layout_width="133dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cycleVie"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/sauvegarde"
+        android:layout_width="125dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sauvegarde"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/permissions"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/permissions"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <TextView
+        android:id="@+id/webservices"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/webservices"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toStartOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
