@@ -1,11 +1,11 @@
 package fr.isen.bosc.apptoolbox
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.activity_login.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -13,8 +13,24 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        imageCycleDeVie.setOnClickListener {
+        buttonCycleDeVie.setOnClickListener {
             startActivity(Intent(this@HomeActivity, CycleDeVieActivity::class.java))
         }
+
+        logOut.setOnClickListener {
+            logOut()
+        }
+    }
+
+    private fun logOut() {
+        val sharedPreferences : SharedPreferences = getSharedPreferences(LoginActivity.USER_PREFS, Context.MODE_PRIVATE)
+        val editor: SharedPreferences.Editor = sharedPreferences.edit()
+        editor.clear()
+        editor.apply()
+
+        val intent = Intent(this@HomeActivity, LoginActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+        startActivity(intent)
+        finish()
     }
 }
