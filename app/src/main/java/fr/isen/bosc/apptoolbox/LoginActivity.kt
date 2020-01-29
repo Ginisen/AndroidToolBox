@@ -13,8 +13,10 @@ class LoginActivity : AppCompatActivity() {
     lateinit var sharedPreferences: SharedPreferences
 
     companion object {
-        private const val GOOD_IDENTIFIANT = "admin"
+        private const val GOOD_IDENTIFIER = "admin"
         private const val GOOD_PASSWORD = "123"
+        private val USER_ID_KEY = "id"
+        private val USER_PASS_KEY = "pwd"
         const val USER_PREFS = "user_prefs"
     }
 
@@ -23,10 +25,10 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         sharedPreferences = getSharedPreferences(USER_PREFS, Context.MODE_PRIVATE)
-        val savedIdentifier :String? = sharedPreferences.getString("is", "")
+        val savedIdentifier :String? = sharedPreferences.getString("id", "")
         val savedPassword :String? = sharedPreferences.getString("pwd", "")
 
-        if (savedIdentifier == GOOD_IDENTIFIANT && savedPassword == GOOD_PASSWORD) {
+        if (savedIdentifier == GOOD_IDENTIFIER && savedPassword == GOOD_PASSWORD) {
             goToHome(savedIdentifier, true)
         }
 
@@ -41,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
     private fun doLogin() {
         val identifier = identifier.text.toString()
         val password = password.text.toString()
-        if(identifier == GOOD_IDENTIFIANT && password == GOOD_PASSWORD) {
+        if(identifier == GOOD_IDENTIFIER && password == GOOD_PASSWORD) {
             //startActivity(Intent(this@LoginActivity, HomeActivity::class.java))
             saveUserCredential(identifier, password)
             goToHome(identifier, true)
@@ -53,8 +55,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun saveUserCredential(identifier: String, password: String) {
         val editor: SharedPreferences.Editor = sharedPreferences.edit()
-        editor.putString("id", identifier)
-        editor.putString("pwd", password)
+        editor.putString(USER_ID_KEY, identifier)
+        editor.putString(USER_PASS_KEY, password)
         editor.apply()
     }
 
