@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
         val password = password.text.toString()
         if(identifier == GOOD_IDENTIFIANT && password == GOOD_PASSWORD) {
             //startActivity(Intent(this@LoginActivity, HomeActivity::class.java))
-            savedUserCredential(identifier, password)
+            saveUserCredential(identifier, password)
             goToHome(identifier, true)
         }
         else {
@@ -51,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun savedUserCredential(identifier: String, password: String) {
+    private fun saveUserCredential(identifier: String, password: String) {
         val editor: SharedPreferences.Editor = sharedPreferences.edit()
         editor.putString("id", identifier)
         editor.putString("pwd", password)
