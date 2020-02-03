@@ -20,6 +20,10 @@ class HomeActivity : AppCompatActivity() {
         logOut.setOnClickListener {
             logOut()
         }
+
+        buttonSauvegarde.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, StorageActivity::class.java))
+        }
     }
 
     private fun logOut() {

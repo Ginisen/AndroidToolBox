@@ -31,13 +31,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182" />
+        app:layout_constraintVertical_bias="0.171" />
 
     <ImageView
         android:id="@+id/buttonCycleDeVie"
         android:layout_width="116dp"
         android:layout_height="112dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:contentDescription="@string/cycleVie"
         app:layout_constraintEnd_toStartOf="@+id/buttonSauvegarde"
@@ -50,7 +50,7 @@
         android:id="@+id/buttonSauvegarde"
         android:layout_width="116dp"
         android:layout_height="112dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="24dp"
         android:contentDescription="@string/sauvegarde"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -133,13 +133,13 @@
         android:id="@+id/logOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="115dp"
+        android:layout_marginBottom="44dp"
         android:background="#C90F0F"
         android:text="@string/logOut"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
