@@ -24,6 +24,10 @@ class HomeActivity : AppCompatActivity() {
         buttonSauvegarde.setOnClickListener {
             startActivity(Intent(this@HomeActivity, StorageActivity::class.java))
         }
+
+        buttonPermissions.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, PermissionsActivity::class.java))
+        }
     }
 
     private fun logOut() {
