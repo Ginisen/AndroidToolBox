@@ -77,40 +77,18 @@
             android:textColorLink="#F44336" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/dateOfBirthLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstNameLayout"
-        app:passwordToggleEnabled="true">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/dateOfBirth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/dateOfBirth"
-            android:textColorHighlight="#86F44336"
-            android:textColorLink="#F44336" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Button
         android:id="@+id/buttonStorage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="113dp"
         android:background="#C90F0F"
         android:text="@string/storage"
         android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateOfBirthLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/firstNameLayout" />
 
     <Button
         android:id="@+id/buttonReading"
@@ -126,5 +104,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonStorage" />
+
+    <TextView
+        android:id="@+id/dateOfBirth"
+        android:layout_width="126dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="249dp"
+        android:text="@string/dateOfBirth"
+        android:textColor="#9E9E9E "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,11 +2,15 @@ package fr.isen.bosc.apptoolbox
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.CalendarView
-import kotlinx.android.synthetic.*
-import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_storage.*
-import kotlinx.android.synthetic.main.activity_storage.view.*
+import android.app.DatePickerDialog
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
+import android.widget.DatePicker
+import android.widget.TextView
+import java.util.Calendar
+
 
 class StorageActivity : AppCompatActivity() {
 
@@ -14,8 +18,19 @@ class StorageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_storage)
 
-        dateOfBirth.setOnClickListener {
+        val dateOfBirth: TextView = findViewById(R.id.dateOfBirth)
 
+        dateOfBirth.setOnClickListener {
+            val cal: Calendar = Calendar.getInstance()
+            val calYear = cal.get(Calendar.YEAR)
+            val calMonth = cal.get(Calendar.MONTH)
+            val calDay = cal.get(Calendar.DAY_OF_MONTH)
+            val datePickerDialog = DatePickerDialog(this,
+                DatePickerDialog.OnDateSetListener { view, year, monthYear, dayMonth ->
+                    dateOfBirth.text = "$dayMonth ${(monthYear + 1)} $year"
+                }, calYear, calMonth, calDay
+            )
+            datePickerDialog.show()
         }
     }
 }
