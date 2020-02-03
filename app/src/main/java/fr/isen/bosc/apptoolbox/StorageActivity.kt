@@ -2,13 +2,10 @@ package fr.isen.bosc.apptoolbox
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_storage.*
 import android.app.DatePickerDialog
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
-import android.widget.DatePicker
 import android.widget.TextView
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_storage.*
 import java.util.Calendar
 
 
@@ -27,10 +24,18 @@ class StorageActivity : AppCompatActivity() {
             val calDay = cal.get(Calendar.DAY_OF_MONTH)
             val datePickerDialog = DatePickerDialog(this,
                 DatePickerDialog.OnDateSetListener { view, year, monthYear, dayMonth ->
-                    dateOfBirth.text = "$dayMonth ${(monthYear + 1)} $year"
+                    dateOfBirth.text = "$dayMonth/${(monthYear + 1)}/$year"
                 }, calYear, calMonth, calDay
             )
             datePickerDialog.show()
+        }
+
+        buttonStorage.setOnClickListener {
+            Toast.makeText(this, "Data saved", Toast.LENGTH_LONG).show()
+        }
+
+        buttonReading.setOnClickListener {
+            Toast.makeText(this, "File .json displayed", Toast.LENGTH_LONG).show()
         }
     }
 }
